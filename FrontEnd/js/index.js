@@ -20,7 +20,7 @@ items.addEventListener('click',e => {btnAccion(e)})
 
 const fetchdata = async() => {
     try {
-        const resp = await fetch('http://localhost:3000');
+        const resp = await fetch('https://api.mercadolibre.com/sites/MLM/search?category=MLM178498');
         const data = await resp.json();
         // let result = data.results;  
         console.log(data);
